@@ -1,235 +1,67 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+  }
 
 body {
-  background: #071739;
-  color: white;
-  min-height: 100vh;
-}
-
-.site-header {
-  background: linear-gradient(135deg, #081b47, #0b255f);
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 2px solid rgba(255,255,255,0.08);
-}
-
-.site-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.site-header p {
-  color: #d1d5db;
-  margin-bottom: 15px;
-}
-
-.site-header nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.site-header nav a {
-  color: #60a5fa;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.site-header nav a:hover {
-  text-decoration: underline;
+font-family: Arial, sans-serif;
+background: #f4f6f8;
+margin: 0;
+padding: 40px 20px;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 30px auto;
-  padding: 20px;
+max-width: 700px;
+margin: auto;
 }
 
-.admin-form-section,
-.admin-actions,
-section {
-  background: #0f1f4d;
-  border-radius: 18px;
-  padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+h1 {
+text-align: center;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.container > p {
+text-align: center;
+color: #666;
 }
 
-.admin-form {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+.file-list {
+margin-top: 30px;
 }
 
-.admin-form input,
-.admin-form select,
-.admin-form button,
-.admin-actions button,
-.card-actions button {
-  padding: 12px 14px;
-  border-radius: 10px;
-  border: none;
-  font-size: 1rem;
+.file {
+background: white;
+padding: 20px;
+margin-bottom: 15px;
+
+```
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+border-radius: 10px;
+
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+```
+
 }
 
-.admin-form input,
-.admin-form select {
-  background: #091735;
-  color: white;
-  border: 1px solid #334155;
+.file span {
+font-size: 17px;
 }
 
-.admin-form input::placeholder {
-  color: #94a3b8;
+.file a {
+text-decoration: none;
+
+```
+background: #007bff;
+color: white;
+
+padding: 10px 18px;
+
+border-radius: 6px;
+```
+
 }
 
-.admin-form button,
-.admin-actions button {
-  background: #38bdf8;
-  color: #03132d;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.25s;
-}
-
-.admin-form button:hover,
-.admin-actions button:hover {
-  background: #0ea5e9;
-}
-
-#cancelEdit {
-  background: #ef4444;
-  color: white;
-}
-
-#cancelEdit:hover {
-  background: #dc2626;
-}
-
-.scores-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.league-block {
-  margin-bottom: 10px;
-}
-
-.league-title {
-  font-size: 1.5rem;
-  color: #38bdf8;
-  margin-bottom: 15px;
-  border-left: 5px solid #38bdf8;
-  padding-left: 12px;
-}
-
-.score-card {
-  background: #091735;
-  border: 1px solid #1e3a8a;
-  border-radius: 16px;
-  padding: 18px;
-  margin-bottom: 15px;
-  transition: 0.25s;
-}
-
-.score-card:hover {
-  transform: translateY(-2px);
-  border-color: #38bdf8;
-}
-
-.score-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  color: #cbd5e1;
-  font-size: 0.95rem;
-}
-
-.match-status {
-  font-weight: bold;
-  color: #facc15;
-}
-
-.teams {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.team-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.match-meta {
-  color: #cbd5e1;
-  margin-bottom: 15px;
-  font-size: 0.95rem;
-}
-
-.card-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.edit-btn {
-  background: #22c55e;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.edit-btn:hover {
-  background: #16a34a;
-}
-
-.delete-btn {
-  background: #ef4444;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.delete-btn:hover {
-  background: #dc2626;
-}
-
-.no-match {
-  text-align: center;
-  background: #091735;
-  border: 1px dashed #475569;
-  padding: 20px;
-  border-radius: 12px;
-  color: #94a3b8;
-}
-
-@media (max-width: 768px) {
-  .site-header h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  .score-header,
-  .team-row {
-    flex-direction: column;
-    gap: 6px;
-  }
+.file a:hover {
+background: #0056b3;
 }
